@@ -19,7 +19,11 @@
           <dt>Description</dt>
           <dd><%= @product.description %></dd>
           <dt>Quantity</dt>
-          <dd><%= @product.quantity %></dd>
+          <% if @product.quantity == 0 %>
+          <dd>SOLD OUT</dd>
+          <%else%>
+          <dd><%=@product.quantity%></dd>
+          <%end%>
           <dt>Price</dt>
           <dd><%= number_to_currency(@product.price) %></dd>
         </dl>
@@ -29,3 +33,4 @@
   </article>
 
 </section>
+ 
