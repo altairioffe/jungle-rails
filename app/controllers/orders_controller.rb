@@ -2,8 +2,19 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
-  end
+    @allOrders = Order.all
+    @line_items = @order.line_items
+    @products = Product.all
+    @product_list = []
 
+    @line_items.each do |item|
+      tempArr = []
+      productId = item.product_id.to_i
+      tempArr.push(productId -1)
+      tempArr.push(item)
+      @product_list.push(tempArr)
+    end
+  end
   def create
     charge = perform_stripe_charge
     order  = create_order(charge)
@@ -53,7 +64,7 @@ class OrdersController < ApplicationController
       )
     end
     order.save!
-    order
+    order 
   end
 
 end
