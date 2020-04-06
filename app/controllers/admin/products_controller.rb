@@ -3,7 +3,7 @@ class Admin::ProductsController < ApplicationController
   username = ENV['ADMIN_NAME']
   password = ENV['ADMIN_PASS']
 
-  # http_basic_authenticate_with name: username, password: password
+  http_basic_authenticate_with name: username, password: password
 
 
   def index
