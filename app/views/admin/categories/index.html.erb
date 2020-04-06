@@ -7,22 +7,20 @@
   <div class="well">
     <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
   </div>
-
-  <ul class="well">
-    <%= @categories.each do |category|  %>  
+  <div class="well">
+  <ul>
+    <% @categories.each do |category|  %>  
     <li>
-      <h2>
-
+      <h3>
     <%= puts category.name.class %>  
     <%= category.name %>  
-
-      </h2>
+      </h3>
     </li>
     <% end %>  
 <h1>
-
 </h1>
    </ul>
+   </div>
 
 
 
