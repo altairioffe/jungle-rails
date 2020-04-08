@@ -20,10 +20,9 @@ RSpec.feature "AddToCarts", type: :feature, js:true do
 
   scenario "cart is empty on page load" do
     visit root_path
-    # puts. root_path.html
-    # find("a[href='/products/1']").click
+
     # commented out b/c it's for debugging only
-    save_and_open_screenshot
+    # save_and_open_screenshot
 
     expect(page).to have_content 'My Cart (0)'
   end
@@ -31,10 +30,9 @@ RSpec.feature "AddToCarts", type: :feature, js:true do
   scenario "Clicking add to cart increases cart by 1" do
     visit root_path
     click_on "Add"
-    # puts. root_path.html
-    # find("a[href='/products/1']").click
+
     # commented out b/c it's for debugging only
-    save_and_open_screenshot
+    # save_and_open_screenshot
 
     expect(page).to have_content 'My Cart (1)'
   end

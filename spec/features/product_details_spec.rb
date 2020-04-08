@@ -22,10 +22,9 @@ RSpec.feature "ProductDetails", type: :feature, js:true do
   scenario "Clicking on a product loads product details page" do
     visit root_path
     click_on "shirt"
-    # puts. root_path.html
-    # find("a[href='/products/1']").click
+
     # commented out b/c it's for debugging only
-    save_and_open_screenshot
+    # save_and_open_screenshot
 
     expect(page).to have_content 'Description'
   end
