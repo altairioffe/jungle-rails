@@ -2,6 +2,16 @@
 
 A mini e-commerce application with Stripe checkout built with Rails 4.2. Testing with Rspec and Capybara.
 
+Features implemented include:
+
+* Sold out badge when product is out of stock
+
+* Admin categories section with ability to create new categories
+* Admin authentication with HTTP basic auth
+* User authentication with bcrypt
+* Order details page displaying line items and total
+* Bug fix: checkout with empty cart
+
 ![home](public/uploads/screenshots/jungle-cart-screenshot.png)
 
 
