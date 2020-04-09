@@ -1,7 +1,11 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application with Stripe checkout built with Rails 4.2. Testing with Rspec and Capybara.
 
+![home](public/uploads/screenshots/jungle-cart-screenshot.png)
+
+
+![home](public/uploads/screenshots/jungle-home-screenshot.png)
 
 ## Setup
 

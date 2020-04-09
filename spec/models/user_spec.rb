@@ -60,7 +60,7 @@ RSpec.describe User, type: :model do
 
   describe '.authenticate_with_credentials' do
 
-    it 'should log users in with the correct username and password'
+    it 'should log users in with the correct username and password'0=
 
   end
 
